@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Meta Tags Audit Tool</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="auditTitle">SEO Meta Tags Audit Tool</h1>
+        <p class="subtitle">
+            Generated: <span id="date"></span> |
+            Approved: <span id="approvedCount">0</span>/<span id="totalCount">0</span> |
+            Locale: UK
+        </p>
+
+        <div class="data-source">
+            <p><strong>Дані з:</strong> <code>./data/meta-tags-part2.json</code></p>
+            <p><strong>Статус:</strong> <span id="auditStatus"></span></p>
+            <p><strong>Опис:</strong> <span id="auditDescription"></span></p>
+        </div>
+
+        <div class="stats" id="stats"></div>
+
+        <div class="legend">
+            <h3>Критерії оцінки:</h3>
+            <div class="legend-items">
+                <div class="legend-item"><strong>Title:</strong> 30-60 символів</div>
+                <div class="legend-item"><strong>Description:</strong> 70-160 символів</div>
+                <div class="legend-item"><span class="issue-tag">Emoji</span> Наявність емодзі</div>
+                <div class="legend-item"><span class="issue-tag">Spam</span> Переспам ключів</div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <label>Статус:</label>
+            <select id="filterStatus">
+                <option value="all">Все</option>
+                <option value="critical">Critical</option>
+                <option value="warning">Warning</option>
+                <option value="ok">OK</option>
+            </select>
+
+            <label>Тип:</label>
+            <select id="filterType">
+                <option value="all">Все</option>
+                <option value="title">Title</option>
+                <option value="desc">Description</option>
+            </select>
+
+            <label>Пошук:</label>
+            <input type="text" id="searchInput" placeholder="Пошук за ключем або текстом...">
+
+            <button onclick="app.resetFilters()">Очистити фільтри</button>
+            <button onclick="app.exportCSV()" class="export">Експорт CSV</button>
+            <button onclick="app.resetAll()" style="background:#c62828">Скинути все</button>
+        </div>
+
+        <table id="metaTable">
+            <thead>
+                <tr>
+                    <th style="width:40px">№</th>
+                    <th style="width:60px">Тип</th>
+                    <th style="width:180px">Ключ</th>
+                    <th style="width:60px">Довж</th>
+                    <th>Поточний текст (проблема)</th>
+                    <th style="width:30px"></th>
+                    <th style="width:60px">Нова довж</th>
+                    <th>Запропонований текст</th>
+                    <th style="width:150px">Проблеми</th>
+                    <th style="width:70px">Статус</th>
+                    <th style="width:80px">Дія</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

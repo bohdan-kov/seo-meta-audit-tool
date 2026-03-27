@@ -1,0 +1,227 @@
+{
+  "version": "2.0",
+  "locale": "uk",
+  "part": 2,
+  "title": "SEO Meta Tags Audit — Part 2",
+  "description": "27 ключів з проблемами SEO (emojis, keyword spam, redundant phrases)",
+  "status": "ВИКЛЮЧНО в мета тегах (без контентного використання)",
+  "generatedAt": "2024-03-27",
+  "tags": [
+    {
+      "type": "desc",
+      "key": "automationBakeryDesc",
+      "current": "➣ Програма для пекарні за допомогою хмарної каси SkyService ✅ Автоматизація пекарні в Україні та інших країнах за найвигіднішими цінами 💰 Управління пекарней - skyservice.pro",
+      "proposed": "Програма для пекарні: рецепти, облік інгредієнтів, продажи. Хмарна каса SkyService. Тест 14 днів.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationBoutiqueDesc",
+      "current": "➣ Автоматизація бутіка за допомогою хмарної каси SkyService ✅ Програма для бутіка в Україні та інших країнах за найвигіднішими цінами 💰 Автоматизація бутіків та спеціалізованих магазинів - skyservice.pro",
+      "proposed": "Касова програма для бутику: облік товарів, продажи, звіти. SkyService POS.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationBusinessDesc",
+      "current": "➣ Автоматизація бізнес-процесів за допомогою хмарної каси SkyService ✅ Програма для автоматизації бізнесу в Україні та інших країнах за найвигіднішими цінами 💰 Послуги автоматизації бізнес-процесів - skyservice.pro",
+      "proposed": "Програма для автоматизації бізнесу: продажи, облік, фінанси. SkyService POS. Тест 14 днів.",
+      "issues": ["Emoji: ➣✅💰", "Keyword spam: автоматизація x3", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationCandyShopDesc",
+      "current": "➣ Автоматизація кондитерської за допомогою хмарної каси SkyService ✅ CRM для кондитерської в Україні та інших країнах за найвигіднішими цінами 💰 Програма обліку для кондитерської - skyservice.pro",
+      "proposed": "CRM для кондитерської: облік виробництва, продажи. SkyService POS. Безкоштовний тест 14 днів.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationCanteenDesc",
+      "current": "➣ Автоматизація їдальні за допомогою хмарної каси SkyService ✅ Програма для їдальні в Україні та інших країнах за найвигіднішими цінами 💰 Облік продуктів у їдальні - skyservice.pro",
+      "proposed": "Система обліку для їдальні: продажи, складський облік. SkyService. Тест 14 днів.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationCosmetologyDesc",
+      "current": "➣ Програма обліку клієнтів косметолога за допомогою хмарної каси SkyService ✅ Програма для косметологічного салону в Україні та інших країнах за найвигіднішими цінами 💰 CRM для косметології - skyservice.pro",
+      "proposed": "CRM для косметолога: запис клієнтів, послуги, матеріали. SkyService POS. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationDeliveryDesc",
+      "current": "➣ Програма для доставки їжі за допомогою хмарної каси SkyService ✅ Автоматизація доставки їжі в Україні та інших країнах за найвигіднішими цінами 💰 Автоматизація кур'єрської доставки - skyservice.pro",
+      "proposed": "Програма для служби доставки: замовлення, маршрути, звіти. SkyService POS. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationDentistryDesc",
+      "current": "➣ Програма для стоматології за допомогою хмарної каси SkyService ✅ CRM для стоматології в Україні та інших країнах за найвигіднішими цінами 💰 Ведення бухгалтерського обліку в стоматології - skyservice.pro",
+      "proposed": "CRM для стоматолога: запис пацієнтів, процедури, платежи. SkyService. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationFoodTruckDesc",
+      "current": "➣ Автоматизація фудтраку за допомогою хмарної каси SkyService ✅ Програми для фудтраку в Україні та інших країнах за найвигіднішими цінами 💰 Система обліку для фудтраку - skyservice.pro",
+      "proposed": "Касова програма для фудтраку: продажи, склад, аналітика. SkyService POS мобільне.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationFranchiseDesc",
+      "current": "➣ Автоматизація франчайзі за допомогою хмарної каси SkyService ✅ Програма франчайзингу в Україні та інших країнах за найвигіднішими цінами 💰 Автоматизація франшизи - skyservice.pro",
+      "proposed": "Система управління франшизою: контроль точок, звіти. SkyService POS.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationHookahDesc",
+      "current": "➣ Програма обліку для кальянної за допомогою хмарної каси SkyService ✅ Автоматизація кальянної в Україні та інших країнах за найвигіднішими цінами 💰 CRM для кальянної - skyservice.pro",
+      "proposed": "CRM для кальянної: облік товарів, продажи, клієнти. SkyService POS. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationHospitalDesc",
+      "current": "➣ Автоматизація клініки за допомогою хмарної каси SkyService ✅ Автоматизація медичних закладів в Україні та інших країнах за найвигіднішими цінами 💰 Програма для лікарні - skyservice.pro",
+      "proposed": "Програма для клініки: запис пацієнтів, процедури, платежи. SkyService. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationJewelryshopDesc",
+      "current": "➣ Автоматизація ювелірного магазину за допомогою хмарної каси SkyService ✅ Облік в ювелірному магазині в Україні та інших країнах за найвигіднішими цінами 💰 Програма для ювелірної торгівлі - skyservice.pro",
+      "proposed": "Касова програма для ювелірного магазину: облік, продажи. SkyService POS. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationKioskDesc",
+      "current": "➣ Програмне забезпечення для кіосків за допомогою хмарної каси SkyService ✅ Програма для кіоску в Україні та інших країнах за найвигіднішими цінами 💰 POS-термінал для роздрібного магазину - skyservice.pro",
+      "proposed": "Касова програма для кіоску: облік товарів, касові операції. SkyService POS.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationMarketDesc",
+      "current": "➣ Автоматизація торгівлі за допомогою хмарної каси SkyService ✅ Програми для автоматизації торгівлі в Україні та інших країнах за найвигіднішими цінами 💰 Автоматизація торгової точки - skyservice.pro",
+      "proposed": "Касова програма для магазину: облік товарів, продажи, аналітика. SkyService. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Keyword spam: автоматизація x3", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationNailsalonDesc",
+      "current": "➣ Програма для манікюрного салону за допомогою хмарної каси SkyService ✅ CRM для манікюрного салону в Україні та інших країнах за найвигіднішими цінами 💰 Програма для студії манікюру - skyservice.pro",
+      "proposed": "Програма для студії манікюру: запис клієнтів, послуги, матеріали. SkyService. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationPetshopDesc",
+      "current": "➣ Програма для зоомагазину за допомогою хмарної каси SkyService ✅ Автоматизація зоомагазину в Україні та інших країнах за найвигіднішими цінами 💰 База даних (зоомагазин) - skyservice.pro",
+      "proposed": "Касова програма для зоомагазину: облік товарів, продажи. SkyService POS. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationPharmacyDesc",
+      "current": "➣ Програми для аптек за допомогою хмарної каси SkyService ✅ Автоматизація аптеки в Україні та інших країнах за найвигіднішими цінами 💰 ПЗ для аптек - skyservice.pro",
+      "proposed": "Програма для аптеки: облік ліків, продажи, рецепти. SkyService POS. Тест 14 днів.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationSpaDesc",
+      "current": "➣ Автоматизація СПА-салону за допомогою хмарної каси SkyService ✅ Програми для СПА-салонів в Україні та інших країнах за найвигіднішими цінами 💰 CRM для спа салону - skyservice.pro",
+      "proposed": "CRM для СПА-салону: запис клієнтів, послуги, матеріали. SkyService. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationSushibarDesc",
+      "current": "➣ Автоматизація суші-бару за допомогою хмарної каси SkyService ✅ Програма для доставки суші в Україні та інших країнах за найвигіднішими цінами 💰 Система автоматизації суші-бару - skyservice.pro",
+      "proposed": "Касова програма для суші-бару: облік інгредієнтів, доставка. SkyService. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationTirefittingDesc",
+      "current": "➣ Програма для шиномонтажу за допомогою хмарної каси SkyService ✅ Автоматизація шиномонтажу в Україні та інших країнах за найвигіднішими цінами 💰 Програма для ведення обліку шиномонтажу - skyservice.pro",
+      "proposed": "Програма для шиномонтажу: запис послуг, клієнти, звіти. SkyService POS. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationTireshopDesc",
+      "current": "➣ Програма для автомийки за допомогою хмарної каси SkyService ✅ Автоматизація автомийки в Україні та інших країнах за найвигіднішими цінами 💰 Програма обліку автомийки - skyservice.pro",
+      "proposed": "Касова програма для автомийки: облік послуг, касові операції. SkyService POS.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "automationVeterinaryclinicDesc",
+      "current": "➣ Програми для ветеринарних клінік за допомогою хмарної каси SkyService ✅ Автоматизація ветеринарної клініки в Україні та інших країнах за найвигіднішими цінами 💰 Автоматизація ветклініки - skyservice.pro",
+      "proposed": "Програма для ветклініки: запис тварин, послуги, платежи. SkyService. Тест.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "solutionsMarketingDesc",
+      "current": "➣ Програма для обліку клієнтів за допомогою хмарної каси SkyService ✅ Програма для ведення клієнтської бази в Україні та інших країнах за найвигіднішими цінами 💰 CRM-база даних клієнтів - skyservice.pro",
+      "proposed": "CRM для маркетингу: база клієнтів, акції, аналітика. SkyService POS.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "solutionsPosTerminalDesc",
+      "current": "➣ POS-термінал на сайті хмарної каси SkyService ✅ Впровадження ПОС-терміналів в Україні за найвигіднішими цінами 💰 Банківський термінал для оплати - skyservice.pro",
+      "proposed": "POS-термінал для оплати товарів та послуг. SkyService інтегрується з касою.",
+      "issues": ["Emoji: ➣✅💰", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "warning"
+    },
+    {
+      "type": "desc",
+      "key": "solutionsStatisticsDesc",
+      "current": "➣ Статистика бізнесу за допомогою хмарної каси SkyService ✅ Аналітика прибутку/витрат бізнесу в Україні та інших країнах за найвигіднішими цінами 💰 Ведення аналітики та статистики бізнесу - skyservice.pro",
+      "proposed": "Аналітика бізнесу: звіти по продажах, прибутках, витратах. SkyService у часі.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    },
+    {
+      "type": "desc",
+      "key": "solutionsWarehouseAccountingDesc",
+      "current": "➣ Програма для обліку товару за допомогою хмарної каси SkyService ✅ Ведення складського обліку в Україні та інших країнах за найвигіднішими цінами 💰 Система складського обліку - skyservice.pro",
+      "proposed": "Система складського обліку: інвентаризація, рух товарів. SkyService POS.",
+      "issues": ["Emoji: ➣✅💰", "Redundant: в Україні та інших країнах", "Overused: за найвигіднішими цінами", "Redundant domain at end"],
+      "status": "critical"
+    }
+  ]
+}
