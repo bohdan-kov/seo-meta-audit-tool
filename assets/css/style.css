@@ -214,6 +214,66 @@ tr.approved td {
   border-radius: 4px;
 }
 
+.text-cell.proposed.editing {
+  padding: 4px;
+  cursor: default;
+}
+
+.text-cell.proposed.editing:hover {
+  background: transparent;
+}
+
+.text-cell.proposed textarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 8px;
+  border: 2px solid #2e7d32;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  color: #2e7d32;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.text-cell.proposed .char-count {
+  font-size: 10px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.text-cell.proposed .edit-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.text-cell.proposed .edit-actions button {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.text-cell.proposed .edit-actions .edit-save {
+  background: #2e7d32;
+  color: white;
+}
+
+.text-cell.proposed .edit-actions .edit-save:hover {
+  background: #388e3c;
+}
+
+.text-cell.proposed .edit-actions .edit-cancel {
+  background: #eee;
+  color: #555;
+}
+
+.text-cell.proposed .edit-actions .edit-cancel:hover {
+  background: #ddd;
+}
+
 .length {
   font-family: monospace;
   font-size: 11px;

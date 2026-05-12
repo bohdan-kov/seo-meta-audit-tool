@@ -65,8 +65,8 @@ class SEOAuditApp {
           <td><span class="length ${this.getLengthClass(tag.current.length, tag.type)}">${tag.current.length}</span></td>
           <td class="text-cell current">${this.escapeHtml(tag.current)}</td>
           <td class="arrow">→</td>
-          <td><span class="length ${this.getLengthClass(proposedText.length, tag.type)}">${proposedText.length}</span></td>
-          <td class="text-cell proposed">${this.escapeHtml(proposedText)}</td>
+          <td><span class="length ${this.getLengthClass(proposedText.length, tag.type)}" id="len-${tag.key}">${proposedText.length}</span></td>
+          <td class="text-cell proposed" id="proposed-${tag.key}" onclick="app.editProposed('${tag.key}')" title="Натисніть, щоб редагувати">${this.escapeHtml(proposedText)}</td>
           <td class="issues">${tag.issues.map(i => `<span class="issue-tag">${i}</span>`).join('')}</td>
           <td><span class="status ${tag.status}">${tag.status.toUpperCase()}</span></td>
           <td>
@@ -115,6 +115,71 @@ class SEOAuditApp {
 
   escapeHtml(text) {
     return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  editProposed(key) {
+    const cell = document.getElementById('proposed-' + key);
+    if (!cell || cell.classList.contains('editing')) return;
+
+    const tag = this.metaTags.find(t => t.key === key);
+    if (!tag) return;
+
+    const currentText = this.customTexts[key] || tag.proposed;
+    const range = tag.type === 'title' ? '30-60' : '70-160';
+
+    cell.classList.add('editing');
+    cell.removeAttribute('onclick');
+    cell.innerHTML = `
+      <textarea id="input-${key}"></textarea>
+      <div class="char-count"><span id="count-${key}">${currentText.length}</span> символів (рекомендовано ${range})</div>
+      <div class="edit-actions">
+        <button type="button" class="edit-save" onclick="app.saveProposed('${key}')">Зберегти</button>
+        <button type="button" class="edit-cancel" onclick="app.cancelEdit('${key}')">Скасувати</button>
+      </div>
+    `;
+
+    const textarea = document.getElementById('input-' + key);
+    textarea.value = currentText;
+    textarea.focus();
+    textarea.selectionStart = textarea.value.length;
+
+    textarea.addEventListener('input', () => {
+      document.getElementById('count-' + key).textContent = textarea.value.length;
+    });
+
+    textarea.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        this.cancelEdit(key);
+      } else if (event.key === 'Enter' && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
+        this.saveProposed(key);
+      }
+    });
+  }
+
+  saveProposed(key) {
+    const textarea = document.getElementById('input-' + key);
+    if (!textarea) return;
+
+    const newText = textarea.value.trim();
+    const tag = this.metaTags.find(t => t.key === key);
+    if (!tag) return;
+
+    if (newText && newText !== tag.proposed) {
+      this.customTexts[key] = newText;
+    } else {
+      delete this.customTexts[key];
+    }
+
+    localStorage.setItem('customTexts', JSON.stringify(this.customTexts));
+    this.render();
+    this.applyFilters();
+  }
+
+  cancelEdit(key) {
+    this.render();
+    this.applyFilters();
   }
 
   toggleApprove(key) {
